@@ -1,5 +1,4 @@
-
-
+//variables
 const taskInput = document.getElementById("task-input");
 const dateInput = document.getElementById("date-input");
 const addButton = document.getElementById("add-btn");
@@ -33,6 +32,7 @@ const showAlert = (message, type) => {
         alert.style.display = 'none';
     }, 3000);
 };
+//show todos 
 const displayTodos = (data) => {
     const todoList = data || todos;
     todosBody.innerHTML = "";
@@ -85,6 +85,7 @@ const addTask = () => {
     }
 
 };
+
 //delete all todos from body and localStorage
 const deleteAllTasks = () => {
     if (todos.length) {
